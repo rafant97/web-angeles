@@ -27,7 +27,7 @@ const PrimeraVista = () => {
             <ellipse cx="500" cy="240" rx="350" ry="80" fill="none" stroke="#8ACFE2"/>
         </svg>
 
-        <div className='flex items-center h-full w-[410px] mb-10'>
+        <div className='flex items-center h-full w-[328px] md:w-[410px] mb-10'>
             <div className='shrink-0 absolute pl-5 rotate-[5deg] z-20 right-[600px] top-[490px]'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 68 68" fill="none">
                     <g clip-path="url(#clip0_2_39)">
