@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#092C45',
-        'azul-figma': '#8ACFE2;',
+        'nuevo-azul': '#8ACFE2',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
