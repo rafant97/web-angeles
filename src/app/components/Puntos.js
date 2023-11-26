@@ -22,9 +22,9 @@ Punto.defaultProps = {
 
 const Puntos = () => {
   return (
-    <div className='mt-28 px-5'>
+    <div className='mt-28 md:px-3'>
       <p className='text-primary text-4xl font-bold text-center'>Lee con atención, luego te cuento</p>
-      <div className='grid md:grid-cols-3 grid-cols-1 md:py-20 md:gap-30 gap-20 mx-auto items-center content-center'>
+      <div className='grid md:grid-cols-3 grid-cols-1 md:py-10 py-5 md:gap-30 gap-20 mx-auto items-center content-center'>
         <Punto
           title="Te tiñes el pelo"
         >
