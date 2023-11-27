@@ -13,12 +13,16 @@ module.exports = {
       colors: {
         'primary': '#092C45',
         'nuevo-azul': '#8ACFE2',
+        'nuevo-azul-2': '#E6FAFF',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        sm: '17px',
+      }
     },
   },
   plugins: [],
