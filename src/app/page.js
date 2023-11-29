@@ -6,6 +6,8 @@ import EmprendedoraVSEmpresaria from './components/EmprendedoraVSEmpresaria'
 import TituloParrafo from './components/TituloParrafo'
 import TitleParrafoyFormulario from './components/TitleParrafoyFormulario'
 import TitleParrafoeImagen from './components/TitleParrafoeImagen'
+import SliderComentarios from './components/SliderComentarios'
+import Footer from './components/Footer'
 export default function Home() {
   return (
     <>
@@ -21,10 +23,13 @@ export default function Home() {
       </div>
       <TitleParrafoyFormulario />
       <div className='md:relative md:max-w-screen-xl p-6 md:h-full w-full flex md:px-20 mx-auto'>
-        <div className="container py-8 xl:text-left flex-col md:flex-row justify-center" >
+        <div className="container pt-8 xl:text-left flex-col md:flex-row justify-center" >
           <TitleParrafoeImagen />
+          <SliderComentarios />
+          <Footer />
         </div>
       </div>
+      
     </>
   )
 }
