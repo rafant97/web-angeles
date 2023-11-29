@@ -24,15 +24,23 @@ const SliderComentarios = () => {
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay, Navigation]}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 3,
+                        }
+                    }}
                     slidesPerView={3}
-                    className="h-[280px] sm:h-[480px] w-full"
+                    className="h-[280px] sm:h-[480px] w-full "
                 >
                     <div className="">
                         {clientes.map((cliente, index) => {
                             return(
                                 <SwiperSlide key={index}>
                                     <div className='border-2 border-slate-200 p-[25px] rounded-2xl mr-5'>
-                                            <p className='leading-none justify-center text-primary text-xs'>&quot{cliente.comentario}&quot</p>
+                                            <p className='leading-none justify-center text-primary text-xs'>	&quot;{cliente.comentario}&quot;</p>
                                         <div className='flex mt-5 border-t-2'>
                                             <div className='mt-5'>
                                                 Imagen
