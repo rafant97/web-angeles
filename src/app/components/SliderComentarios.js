@@ -30,9 +30,9 @@ const SliderComentarios = () => {
                     <div className="">
                         {clientes.map((cliente, index) => {
                             return(
-                                <SwiperSlide>
-                                    <div key={index} className='border-2 border-slate-200 p-[25px] rounded-2xl mr-5'>
-                                            <p className='leading-none justify-center text-primary text-xs'>"{cliente.comentario}"</p>
+                                <SwiperSlide key={index}>
+                                    <div className='border-2 border-slate-200 p-[25px] rounded-2xl mr-5'>
+                                            <p className='leading-none justify-center text-primary text-xs'>&quot{cliente.comentario}&quot</p>
                                         <div className='flex mt-5 border-t-2'>
                                             <div className='mt-5'>
                                                 Imagen
