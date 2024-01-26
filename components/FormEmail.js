@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import axios from 'axios'
+import {useRouter} from 'next/navigation';
 
 const FormEmail = ({textoBoton}) => {
 
+  const router = useRouter()
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
@@ -42,6 +44,7 @@ const FormEmail = ({textoBoton}) => {
     
         // Maneja la respuesta según sea necesario
         console.log('Respuesta de MailerLite:', response.data);
+        router.push('/agradecimiento')
       } catch (error) {
         // Maneja los errores
         console.error('Error al agregar suscriptor:', error);
@@ -59,7 +62,7 @@ const FormEmail = ({textoBoton}) => {
         <input 
             type="email" 
             placeholder="Tu correo" 
-            className='border border-slate-200 p-2 rounded-3xl w-2/3'
+            className='border border-slate-200 p-2 rounded-3xl w-2/3 text-black'
             onChange={(e) => setEmail(e.target.value)}
         />
         <button 
